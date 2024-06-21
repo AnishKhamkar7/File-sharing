@@ -1,3 +1,3 @@
-const DB_NAME = "mymongo"
+const DB_NAME = "videotube"
 
 export { DB_NAME }

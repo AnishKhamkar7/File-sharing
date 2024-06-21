@@ -15,8 +15,10 @@ connectDB();
 
 //routes
 import useRouter from './routes/file.routes.js'
+import showouter from './routes/show.routes.js'
 
-app.use('./api/v1/',useRouter)
+app.use('/api/files',useRouter)
+app.use('/files', showouter)
 
 app.listen(PORT, () =>{
     console.log(`Listening on port ${PORT}`);
